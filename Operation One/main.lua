@@ -16,7 +16,7 @@ do
 
 
    do 
-    local base_url = "https://github.com/buhayhayahay332-lang/SkinChanger/main/Operation%20One" 
+    local base_url = "https://raw.githubusercontent.com/buhayhayahay332-lang/SkinChanger/main/Operation%20One/"
 
     local includes = {
         "sdk/memory.lua",
