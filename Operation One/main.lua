@@ -91,18 +91,18 @@ end
         local _local = window:AddTab("Local") do
             local attachment_editor_groupbox = _local:AddLeftGroupbox("Attachment Editor") do
 
-                attachment_editor_groupbox:AddDropdown('attachment_editor_skin', {Values = {"Default", "Golden", "Diamond", "Red", "Green", "Blue", "Halloween", "Yellow", "White", "SnowCamo", "Kalash", "Skulls", "OilSpill", "HazardSkin", "ForestCamo", "ClassicStuds", "DeepRed", "FrenchSticker", "Steyr", "DesertCamo", "Ghillie", "CarbonFiber", "Space"} , Default = 1, Multi = false, Text = 'Skin', Callback = function(Value)
+                attachment_editor_groupbox:AddDropdown('attachment_editor_skin', {Values = {"Default", "BlackCamo", "BlackIce", "Blue", "CandyCane", "CandyCaneCrowbar", "CarbonFiber", "Cardboard", "CheckeredSkin", "ClassicAA12", "CrackedEarth", "DarkRedCamo", "DeepRed", "DesertCamo", "Diamond", "FestiveLightsM4", "ForestCamo", "FrenchSticker", "Ghillie", "GhostShipSkin", "GhostSkin", "GhostStickerSkin", "Golden", "Green", "HalloweenParty", "HazardMP7", "HazardSkin", "HotRedL85", "IceDrone", "Kalash", "Karambit", "MakeshiftBeretta", "MedievalShield", "NeonShapesM249", "OilSpill", "OrnamentBall", "PumpkinBomb", "PurpleFadeC775", "Red", "RustyAUG", "ScytheHammer", "Skulls", "SnowCamo", "Space", "SpiderHookSkin", "SpiderWebSkin", "Splattered", "Steyr", "Tan", "Toxic", "WastelandRSh12", "White", "Yellow"} , Default = 1, Multi = false, Text = 'Skin', Callback = function(Value)
                     attachment_editor_settings.skin = Value;
                 end});
-                attachment_editor_groupbox:AddDropdown('attachment_editor_scope', {Values = {"Default", "PSO", "PMII", "ACOG", "Specter", "TA44", "Kobra", "Micro", "XPS", "DeltaPoint", "Primer"} , Default = 1, Multi = false, Text = 'Scope', Callback = function(Value)
+                attachment_editor_groupbox:AddDropdown('attachment_editor_scope', {Values = {"Default", "PMII", "PSO", "ACOG", "Specter", "TA44", "Kobra", "Micro", "OKB8", "XPS", "DeltaPoint"} , Default = 1, Multi = false, Text = 'Scope', Callback = function(Value)
                     attachment_editor_settings.scope = Value;
                 end});
 
-                attachment_editor_groupbox:AddDropdown('attachment_editor_barrel', {Values = {"Default", "Compensator", "FlashHider", "MuzzleBrake", "Silencer"} , Default = 1, Multi = false, Text = 'Barrel', Callback = function(Value)
+                attachment_editor_groupbox:AddDropdown('attachment_editor_barrel', {Values = {"Default", "Compensator", "ExtendedBarrel", "FlashHider", "MuzzleBrake", "MuzzleBrake2", "MuzzleBrakePistol", "Silencer", "Silencer2", "SilencerShotgun"} , Default = 1, Multi = false, Text = 'Barrel', Callback = function(Value)
                     attachment_editor_settings.barrel = Value;
                 end});
 
-                attachment_editor_groupbox:AddDropdown('attachment_editor_charm', {Values = {"Default", "AceCard", "BlueBall", "BulletCharm", "ColorfulSquares", "DiamondCharm", "LoveHeart", "LuckyCharm"} , Default = 1, Multi = false, Text = 'Charm', Callback = function(Value)
+                attachment_editor_groupbox:AddDropdown('attachment_editor_charm', {Values = {"Default", "8BallCharm", "AceCard", "BananaCharm", "BellCharm", "BlueBall", "BulletCharm", "ChristmasTreeCharm", "ColorfulSquares", "DiamondCharm", "DogTagCharm", "EyeballCharm", "GhostCharm", "LoveHeart", "LuckyCharm", "PumpkinCharm", "S1Bronze", "S1Champion", "S1Diamond", "S1Gold", "S1Platinum", "S1Silver", "S2Bronze", "S2Champion", "S2Diamond", "S2Gold", "S2Platinum", "S2Silver", "SnowGlobeCharm", "SnowflakeCharm", "TargetPracticeCharm"} , Default = 1, Multi = false, Text = 'Charm', Callback = function(Value)
                     attachment_editor_settings.charm = Value;
                 end});
 
@@ -110,7 +110,7 @@ end
                     attachment_editor_settings.mag = Value;
                 end});
 
-                attachment_editor_groupbox:AddDropdown('attachment_editor_stock', {Values = {"Default", "SwitchGlock"} , Default = 1, Multi = false, Text = 'Stock', Callback = function(Value)
+                attachment_editor_groupbox:AddDropdown('attachment_editor_stock', {Values = {"Default", "MAC11Unfold", "MP5Stock", "MP7Stock", "SPAS12Unfold", "SkorpionUnfold", "SwitchGlock"} , Default = 1, Multi = false, Text = 'Stock', Callback = function(Value)
                     attachment_editor_settings.stock = Value;
                 end});
 
@@ -146,8 +146,8 @@ end
             theme_manager:SetLibrary(library);
             save_manager:SetLibrary(library);
             save_manager:IgnoreThemeSettings();
-            theme_manager:SetFolder("KLUB");
-            save_manager:SetFolder("KLUB/Operation One");
+            theme_manager:SetFolder("YE");
+            save_manager:SetFolder("YE-THE-GLAZER/Operation One");
             save_manager:BuildConfigSection(ui_settings);
             theme_manager:ApplyToTab(ui_settings);
             save_manager:LoadAutoloadConfig();
