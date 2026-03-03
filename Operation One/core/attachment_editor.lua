@@ -1,4 +1,3 @@
---// bout to add skin chnger fro shield too tmrw 
 local attachment_editor = {};
 local attachment_modules = {};
 local replicated_storage:  ReplicatedStorage;
